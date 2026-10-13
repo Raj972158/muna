@@ -294,7 +294,7 @@ h1 span{
 
     </div>
 <div style="text-align:center; margin-top:18px; font-size:16px; color:#ffffff;">
-    As managed by
+ ads managed by
     <a href="https://telegram.me/+LiETHEERYtgzNjU1"
        target="_blank"
        style="color:#FFEB3B; text-decoration:none; font-weight:bold;">
@@ -302,6 +302,62 @@ h1 span{
     </a>
 </div>
 </div>
+<!-- AUTO REDIRECT COUNTDOWN START -->
+<div id="redirectBox" style="
+  text-align:center;
+  padding:20px 10px;
+  margin:20px auto;
+  color:#ffffff;
+  font-family:Arial,sans-serif;
+  font-size:15px;
+">
+  <div style="margin-bottom:10px;">
+    Redirecting in
+  </div>
 
+  <div id="countdown" style="
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:10px;
+  ">8</div>
+
+  <div>Please wait...</div>
+
+  <a id="redirectLink"
+     href="https://example.com"
+     style="
+       display:inline-block;
+       margin-top:15px;
+       color:#ffffff;
+       text-decoration:underline;
+     ">
+    Continue Now
+  </a>
+</div>
+
+<script>
+(function () {
+  // Yahan apna doosra page ka link daalein
+  var targetUrl = "https://telegram.me/+802iOwwZM_JlZjhl";
+
+  var seconds = 8;
+  var countdown = document.getElementById("countdown");
+  var redirectLink = document.getElementById("redirectLink");
+
+  redirectLink.href = targetUrl;
+
+  var timer = setInterval(function () {
+    seconds--;
+    countdown.textContent = seconds;
+
+    if (seconds <= 0) {
+      clearInterval(timer);
+      window.location.href = targetUrl;
+    }
+  }, 1000);
+})();
+</script>
+<!-- AUTO REDIRECT COUNTDOWN END -->
+    
 </body>
 </html>
