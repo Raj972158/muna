@@ -1,13 +1,7 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="te">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Trade with Munaaf</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -26,336 +20,247 @@ src="https://www.facebook.com/tr?id=1435074448739535&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#052E1A">
+<meta name="description" content="Learn stock market step by step. స్టాక్ మార్కెట్ నేర్చుకోండి.">
+<title>Market Learning Hub - స్టాక్ మార్కెట్ నేర్చుకోండి</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
+:root{--bg:#052E1A;--card:#0A4026;--line:#14683f;--gold:#F5C542;--text:#EAF7EF;--muted:#9fcfb3;--btn:#25D366}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins','Noto Sans Telugu',system-ui,sans-serif;background:radial-gradient(circle at 50% -10%,#0d5c36 0,var(--bg) 55%);color:var(--text);line-height:1.6;min-height:100vh;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+.wrap{max-width:480px;margin:0 auto;padding:16px}
+.tip{background:#0a3a22;border:1px dashed var(--line);border-radius:10px;padding:8px 12px;font-size:12px;color:var(--muted);text-align:center}
+.brand{display:flex;align-items:center;justify-content:space-between;margin:18px 0}
+.logo{display:flex;align-items:center;gap:10px}
+.logo i{width:42px;height:42px;border-radius:12px;background:var(--gold);color:#052E1A;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:20px}
+.logo b{display:block;font-size:16px;line-height:1.2}
+.logo small{color:var(--muted);font-size:11px;letter-spacing:.08em}
+.live{font-size:12px;font-weight:600;color:#ff6b6b;display:flex;align-items:center;gap:6px}
+.live:before{content:"";width:8px;height:8px;border-radius:50%;background:#ff4d4d;animation:p 1.2s infinite}
+@keyframes p{50%{opacity:.25}}
+.badge{display:inline-block;background:#0e5a35;border:1px solid var(--line);border-radius:99px;padding:5px 14px;font-size:13px;margin-bottom:14px}
+h1{font-size:30px;line-height:1.35;font-weight:800;margin-bottom:6px}
+h1 span{display:block;color:var(--gold);font-size:22px;margin-top:4px}
+.sub{color:var(--muted);font-size:15px;margin-bottom:22px}
+.form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.form p{font-size:13px;color:var(--muted);margin-bottom:12px}
+label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
+input{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:#06331e;color:var(--text);font:inherit;font-size:16px}
+input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.err{color:#ffb3b3;font-size:13px;min-height:20px;margin-top:8px}
+.cta{display:block;width:100%;text-align:center;text-decoration:none;border:0;cursor:pointer;background:var(--btn);color:#032313;font:inherit;font-weight:800;font-size:16px;padding:15px;border-radius:14px;margin-top:10px;box-shadow:0 6px 0 #138a41}
+.cta:active{transform:translateY(3px);box-shadow:0 3px 0 #138a41}
+.cta small{display:block;font-weight:600;font-size:12px;opacity:.8}
+.note{text-align:center;font-size:13px;color:var(--gold);margin-top:14px}
+h2{font-size:20px;margin:34px 0 14px}
+h2 small{display:block;color:var(--muted);font-size:13px;font-weight:400}
+ul{list-style:none;display:grid;gap:10px}
+li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px 14px 52px;position:relative;font-size:15px}
+li:before{content:"✓";position:absolute;left:14px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:var(--gold);color:#052E1A;display:grid;place-items:center;font-weight:800}
+li small{display:block;color:var(--muted);font-size:13px}
+.final{text-align:center;margin-top:30px}
+.final h3{font-size:20px;margin-bottom:4px}
+.disc{margin-top:30px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.disc p+p{margin-top:8px}
+.powered{text-align:center;font-size:12px;color:var(--muted);margin:18px 0}
+.powered a{color:var(--gold)}
+.fallback{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:8px;text-align:center}
+.fallback h3{font-size:15px;margin-bottom:8px}
+.fallback .row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.fallback button{flex:1 1 130px;background:#0e5a35;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;font-size:13px;cursor:pointer}
+.tape{margin:-4px -16px 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#06331e;min-height:46px;overflow:hidden}
+.livebox{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:8px;overflow:hidden}
+.livebox .tradingview-widget-container{width:100%}
+.live-note{font-size:12px;color:var(--muted);margin-top:8px;text-align:center}
+body{background:radial-gradient(circle at 50% -5%,#11803f 0,#0a4a29 30%,var(--bg) 70%)}
+h1{background:linear-gradient(90deg,#fff,#b8ffd4);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 span{background:linear-gradient(90deg,#F5C542,#ff9f43);-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge{background:linear-gradient(90deg,#0e5a35,#14803f);border-color:#2fbf71}
+.profile{text-align:center;margin:6px 0 20px}
+.avatar{position:relative;width:132px;height:132px;margin:0 auto 12px;border-radius:50%;padding:4px;background:conic-gradient(#F5C542,#25D366,#00e0ff,#F5C542);animation:spin 6s linear infinite}
+.avatar .in{position:relative;width:100%;height:100%;border-radius:50%;background:var(--bg);padding:4px;animation:spin 6s linear infinite reverse}
+.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;background:#0a4026}
+.avatar .dot{position:absolute;right:8px;bottom:8px;width:20px;height:20px;border-radius:50%;background:#25D366;border:3px solid var(--bg);animation:none}
+.pname{font-size:22px;font-weight:800}
+.ptag{display:inline-flex;gap:8px;align-items:center;margin-top:6px;font-size:12px;color:var(--muted)}
+.ptag b{background:#25D366;color:#032313;border-radius:99px;padding:2px 10px;font-weight:800}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0 4px}
+.stats div{background:linear-gradient(160deg,#0f5a34,#0a4026);border:1px solid var(--line);border-radius:14px;padding:10px 4px;text-align:center}
+.stats b{display:block;font-size:18px;color:var(--gold)}
+.stats small{font-size:11px;color:var(--muted)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.avatar,.avatar .in{animation:none}}
+@media (prefers-reduced-motion:reduce){.live:before{animation:none}html{scroll-behavior:auto}}
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:#07141f;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:14px;
-    overflow-x:hidden;
-}
-
-/* MAIN CARD */
-
-.container{
-    width:100%;
-    max-width:390px;
-    background:#0d1b28;
-    border-radius:26px;
-    padding:28px 20px;
-    text-align:center;
-    border:1px solid rgba(255,255,255,0.05);
-    box-shadow:0 0 30px rgba(0,255,255,0.08);
-}
-
-/* PROFILE */
-
-.profile{
-    width:95px;
-    height:95px;
-    margin:auto;
-    position:relative;
-}
-
-.profile img{
-    width:100%;
-    height:100%;
-    border-radius:50%;
-    object-fit:cover;
-    border:3px solid #42e8ff;
-}
-
-.online{
-    width:18px;
-    height:18px;
-    background:#3cff65;
-    border-radius:50%;
-    position:absolute;
-    right:4px;
-    bottom:8px;
-    border:2px solid #0d1b28;
-}
-
-/* TITLE */
-
-h1{
-    color:#fff;
-    font-size:28px;
-    margin-top:18px;
-    font-weight:700;
-    line-height:1.3;
-}
-
-h1 span{
-    color:#5ce7ff;
-}
-
-/* VERIFY */
-
-.verify{
-    color:#4fe5ff;
-    margin-top:10px;
-    font-size:15px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:7px;
-    font-weight:500;
-}
-
-.verify .tick{
-    width:18px;
-    height:18px;
-    border-radius:50%;
-    background:#4fe5ff;
-    color:#07141f;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:11px;
-    font-weight:bold;
-}
-
-/* DESCRIPTION */
-
-.desc{
-    color:#d6e0e7;
-    font-size:14px;
-    line-height:1.7;
-    margin-top:18px;
-    padding:0 4px;
-}
-
-/* BUTTON */
-
-.telegram-btn{
-    margin-top:24px;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    text-decoration:none;
-    background:linear-gradient(90deg,#48dfff,#76f4ff);
-    color:#07141f;
-    padding:15px;
-    border-radius:16px;
-    font-size:18px;
-    font-weight:700;
-    transition:0.3s;
-}
-
-.telegram-btn:hover{
-    transform:scale(1.02);
-}
-
-.telegram-btn img{
-    width:24px;
-}
-
-/* FEATURES */
-
-.features{
-    margin-top:22px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:14px;
-}
-
-.box{
-    background:#111f2d;
-    border-radius:18px;
-    padding:18px 10px;
-    border:1px solid rgba(255,255,255,0.04);
-}
-
-.icon{
-    font-size:28px;
-    margin-bottom:8px;
-}
-
-.box h3{
-    color:#fff;
-    font-size:17px;
-    margin-bottom:3px;
-}
-
-.box p{
-    color:#b9c5cf;
-    font-size:12px;
-}
-
-/* MOBILE PERFECT */
-
-@media(max-width:480px){
-
-    .container{
-        max-width:100%;
-        border-radius:22px;
-        padding:24px 16px;
-    }
-
-    h1{
-        font-size:24px;
-    }
-
-    .telegram-btn{
-        font-size:16px;
-        padding:14px;
-    }
-
-    .box h3{
-        font-size:15px;
-    }
-
-}
-
+.avwrap{position:relative;width:132px;height:132px;margin:0 auto 14px}
+.avwrap .avatar{margin:0}
+.avwrap:before,.avwrap:after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #ff4d4d;opacity:0;animation:ripple 2.4s ease-out infinite;pointer-events:none}
+.avwrap:after{animation-delay:1.2s}
+@keyframes ripple{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.45);opacity:0}}
+.livepill{position:absolute;left:50%;bottom:-8px;transform:translateX(-50%);display:flex;align-items:center;gap:6px;background:#e11d2e;color:#fff;font-weight:800;font-size:11px;letter-spacing:.08em;padding:4px 12px;border-radius:99px;border:2px solid var(--bg);z-index:3;white-space:nowrap}
+.livepill:before{content:"";width:7px;height:7px;border-radius:50%;background:#fff;animation:p 1s infinite}
+.quote{margin:10px auto 0;max-width:300px;min-height:70px}
+@media (prefers-reduced-motion:reduce){.avwrap:before,.avwrap:after,.livepill:before{animation:none}}
 </style>
 </head>
-
 <body>
+<div class="wrap">
 
-<div class="container">
-
-    <!-- PHOTO -->
-    <!-- image.jpg की जगह अपना JPG फोटो डालना -->
-
-    <div class="profile">
-        <img src="p.jpg" alt="">
-        <div class="online"></div>
+  <div class="tip">Telegram త్వరగా ఓపెన్ అవ్వాలంటే ••• నొక్కి "Open in Browser/Safari" ఎంచుకోండి<br></div>
+<section class="profile">
+    
+    <div class="avwrap"><div class="avatar"><div class="in">
+      <div>
+        <img src="p.jpg" alt="Pankaj" style="width:110px;height:110px;border-radius:50%;object-fit:cover;border:3px solid var(--green);">
     </div>
-
-    <!-- TITLE -->
-
-    <h1>Trade With Munaaf <span>OFFICIAL™</span></h1>
-
-    <!-- VERIFIED -->
-
-    <div class="verify">
-        <div class="tick">✓</div>
-        Verified Expert Account
+      <span class="dot"></span>
+    </div></div><span class="livepill">LIVE MARKET</span></div>
+    <div class="pname" id="name">TRADE WITH MUNAAF</div>
+    <div class="ptag"><b>● LIVE</b> Trading Mentor • Market Learning</div>
+    <div class="stats">
+      <div><b>Step by Step</b><small>Basics → Advanced</small></div>
+      <div><b>Daily</b><small>Live Updates</small></div>
+      <div><b>Free</b><small>Telugu + English</small></div>
     </div>
+  </section>
+   <section id="join" class="form">
+    <p>Telegram లో జాయిన్ అవ్వడానికి వివరాలు నింపండి · Fill details to join</p>
+    <label for="name">మీ పేరు · Name</label>
+    <input id="name" type="text" autocomplete="name" placeholder="Your name">
+    <label for="age">వయసు · Age</label>
+    <input id="age" type="number" inputmode="numeric" min="18" placeholder="18+">
+    <div class="err" id="err" role="alert"></div>
+    <a class="cta" id="joinBtn" href="https://telegram.me/+802iOwwZM_JlZjhl">Join Telegram<small>ఉచితంగా జాయిన్ అవ్వండి</small></a>
+  </section><BR>
+   
+  <h1>స్టాక్ మార్కెట్ నేర్చుకోండి<span>Learn Trading Step by Step</span></h1>
+  <p class="sub">తెలుగులో సులభంగా, ప్రాక్టికల్‌గా నేర్చుకోండి. Simple Telugu + English lessons, live market guidance.</p>
+  
+  <h2>మీరు ఏం నేర్చుకుంటారు? <small>What you will learn</small></h2>
+  <ul>
+    <li>బేసిక్స్ నుండి అడ్వాన్స్‌డ్ వరకు<small>Share market basics to advanced concepts</small></li>
+    <li>చార్ట్ రీడింగ్ &amp; టెక్నికల్ అనాలిసిస్<small>Chart reading and technical analysis</small></li>
+    <li>రిస్క్ మేనేజ్‌మెంట్ &amp; ట్రేడింగ్ సైకాలజీ<small>Risk management and trading psychology</small></li>
+    <li>రోజువారీ మార్కెట్ అప్‌డేట్స్<small>Daily market updates and learning posts</small></li>
+  </ul><BR>
 
-    <!-- DESCRIPTION -->
+  <section id="join" class="form">
+    <p>Telegram లో జాయిన్ అవ్వడానికి వివరాలు నింపండి · Fill details to join</p>
+    <label for="name">మీ పేరు · Name</label>
+    <input id="name" type="text" autocomplete="name" placeholder="Your name">
+    <label for="age">వయసు · Age</label>
+    <input id="age" type="number" inputmode="numeric" min="18" placeholder="18+">
+    <div class="err" id="err" role="alert"></div>
+    <a class="cta" id="joinBtn" href="https://telegram.me/+802iOwwZM_JlZjhl">Join Telegram<small>ఉచితంగా జాయిన్ అవ్వండి</small></a>
+  </section>
 
-    <div class="desc">
-        Welcome to the elite community. Get access to premium daily updates,
-        exclusive strategies and 24/7 support from our experts.
-    </div>
-
-    <!-- TELEGRAM BUTTON -->
-
-    <!-- यहाँ अपना Telegram लिंक डालना -->
-
-    <a href="https://telegram.me/+802iOwwZM_JlZjhl" target="_blank" class="telegram-btn">
-
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
-
-        Join Telegram Channel
-
-    </a>
-
-    <!-- FEATURES -->
-
-    <div class="features">
-<div class="box">
-            <div class="icon">🛡️</div>
-            <h3>Secure</h3>
-            <p>Safe Platform</p>
-        </div>
-
-        <div class="box">
-            <div class="icon">⭐</div>
-            <h3>Premium</h3>
-            <p>Daily Updates</p>
-        </div>
-
-        <div class="box">
-            <div class="icon">👥</div>
-            <h3>100k+</h3>
-            <p>Active Members</p>
-        </div>
-
-        <div class="box">
-            <div class="icon">⚡</div>
-            <h3>Live</h3>
-            <p>Real-time Info</p>
-        </div>
-        
-<div style="text-align:center; margin-top:18px; font-size:16px; color:#ffffff;">
- ads managed by
-    <a href="https://telegram.me/+LiETHEERYtgzNjU1"
-       target="_blank"
-       style="color:#FFEB3B; text-decoration:none; font-weight:bold;">
-        APEagency
-    </a>
-</div>
-<!-- AUTO REDIRECT COUNTDOWN START -->
-<div id="redirectBox" style="
-  text-align:center;
-  padding:20px 10px;
-  margin:20px auto;
-  color:#ffffff;
-  font-family:Arial,sans-serif;
-  font-size:15px;
-">
-  <div style="margin-bottom:10px;">
-    Redirecting in
+  <div class="disc">
+    <p><b>Disclaimer:</b> This page and channel are for educational purposes only. We are not SEBI registered advisors. Trading and investing in the stock market involve risk, and past performance does not guarantee future results. Please consult a certified financial advisor before investing. No profit or income is guaranteed.</p>
+    <p><b>నిరాకరణ:</b> ఇది కేవలం విద్యా ప్రయోజనాల కోసం మాత్రమే. మేము SEBI రిజిస్టర్డ్ సలహాదారులం కాదు. స్టాక్ మార్కెట్ ట్రేడింగ్‌లో రిస్క్ ఉంటుంది. ఎలాంటి లాభాలకు హామీ లేదు. పెట్టుబడి పెట్టే ముందు సర్టిఫైడ్ ఫైనాన్షియల్ అడ్వైజర్‌ను సంప్రదించండి.</p>
   </div>
-
-  <div id="countdown" style="
-    font-size:32px;
-    font-weight:800;
-    margin-bottom:10px;
-  ">8</div>
-
-  <div>Please wait...</div>
-
-  <a id="redirectLink"
-     href="https://example.com"
-     style="
-       display:inline-block;
-       margin-top:15px;
-       color:#ffffff;
-       text-decoration:underline;
-     ">
-    Continue Now
-  </a>
-</div>
+  <p class="powered">Powered by <a href="https://telegram.me/+LiETHEERYtgzNjU1" target="_blank" rel="noopener">APEagency</a></p>
 
 <script>
-(function () {
-  // Yahan apna doosra page ka link daalein
-  var targetUrl = "https://telegram.me/+802iOwwZM_JlZjhl";
-
-  var seconds = 8;
-  var countdown = document.getElementById("countdown");
-  var redirectLink = document.getElementById("redirectLink");
-
-  redirectLink.href = targetUrl;
-
-  var timer = setInterval(function () {
-    seconds--;
-    countdown.textContent = seconds;
-
-    if (seconds <= 0) {
-      clearInterval(timer);
-      window.location.href = targetUrl;
-    }
-  }, 1000);
+// ====== యిక్కడ మీ వివరాలు మార్చండి / EDIT HERE ======
+var TELEGRAM_LINK = "https://telegram.me/+802iOwwZM_JlZjhl";
+var PROFILE_NAME  = "Your Name";          // మీ పేరు
+var PROFILE_PHOTO = "";                   // ఉదా: "p.jpg" (అదే folder లో ఫోటో పెట్టండి)
+// =====================================================
+var $ = function(id){return document.getElementById(id)};
+(function(){
+  var ini = (PROFILE_NAME.trim().charAt(0) || "M").toUpperCase();
+  var svg = "<svg xmlns='http://www.w3.org/2000/svg' width='124' height='124'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#F5C542'/><stop offset='1' stop-color='#25D366'/></linearGradient></defs><rect width='124' height='124' fill='url(#g)'/><text x='62' y='80' font-size='56' font-weight='800' text-anchor='middle' fill='#052E1A' font-family='Arial'>" + ini + "</text></svg>";
+  var fallback = "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+  var img = $("photo");
+  img.onerror = function(){ img.onerror = null; img.src = fallback; };
+  img.src = PROFILE_PHOTO || fallback;
+  $("pname").textContent = PROFILE_NAME;
 })();
+function tgApp(){ return TELEGRAM_LINK.replace("https://t.me/","tg://join?invite=").replace("+",""); }
+function valid(){
+  var n = $("name").value.trim(), a = parseInt($("age").value,10);
+  if(n.length < 2){ $("err").textContent = "దయచేసి మీ పేరు రాయండి · Please enter your name"; $("name").focus(); return false; }
+  if(!a || a < 18){ $("err").textContent = "వయసు 18+ ఉండాలి · Age must be 18 or above"; $("age").focus(); return false; }
+  $("err").textContent = ""; return true;
+}
+$("joinBtn").addEventListener("click", function(e){
+  e.preventDefault();
+  if(valid()) window.location.href = TELEGRAM_LINK;
+});
+Array.prototype.forEach.call(document.querySelectorAll(".js-scroll"), function(a){
+  a.addEventListener("click", function(){ setTimeout(function(){ $("name").focus(); }, 400); });
+});
+$("openApp").addEventListener("click", function(){ window.location.href = tgApp(); });
+$("openLink").addEventListener("click", function(){ window.open(TELEGRAM_LINK, "_blank", "noopener"); });
+$("copyLink").addEventListener("click", function(){
+  var b = this;
+  try{ navigator.clipboard.writeText(TELEGRAM_LINK).then(function(){ b.textContent = "Copied ✓"; }); }
+  catch(e){ prompt("Copy this link:", TELEGRAM_LINK); }
+});
+
+// ====== LIVE TICKER (TradingView) ======
+function addTicker(id){
+  var box = $(id); if(!box) return;
+  var wrap = document.createElement("div");
+  wrap.className = "tradingview-widget-container";
+  var inner = document.createElement("div");
+  inner.className = "tradingview-widget-container__widget";
+  wrap.appendChild(inner);
+  var sc = document.createElement("script");
+  sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
+  sc.async = true;
+  sc.text = JSON.stringify({
+    symbols: [
+      {proName:"BSE:SENSEX", title:"SENSEX"},
+      {proName:"NSE:NIFTY", title:"NIFTY 50"},
+      {proName:"NSE:BANKNIFTY", title:"BANK NIFTY"},
+      {proName:"NSE:RELIANCE", title:"RELIANCE"},
+      {proName:"NSE:HDFCBANK", title:"HDFC BANK"},
+      {proName:"NSE:TCS", title:"TCS"},
+      {proName:"NSE:INFY", title:"INFOSYS"},
+      {proName:"FX_IDC:USDINR", title:"USD/INR"},
+      {proName:"OANDA:XAUUSD", title:"GOLD"}
+    ],
+    showSymbolLogo: false,
+    colorTheme: "dark",
+    isTransparent: true,
+    displayMode: "adaptive",
+    locale: "en"
+  });
+  wrap.appendChild(sc);
+  box.appendChild(wrap);
+}
+addTicker("tapeTop");
+addTicker("tapeBottom");
+
+function addWidget(id, file, cfg){
+  var box = $(id); if(!box) return;
+  var wrap = document.createElement("div");
+  wrap.className = "tradingview-widget-container";
+  var inner = document.createElement("div");
+  inner.className = "tradingview-widget-container__widget";
+  wrap.appendChild(inner);
+  var sc = document.createElement("script");
+  sc.src = "https://s3.tradingview.com/external-embedding/" + file;
+  sc.async = true;
+  sc.text = JSON.stringify(cfg);
+  wrap.appendChild(sc);
+  box.appendChild(wrap);
+}
+addWidget("quoteNifty","embed-widget-single-quote.js",{symbol:"NSE:NIFTY",width:"100%",colorTheme:"dark",isTransparent:true,locale:"en"});
+addWidget("liveBox","embed-widget-market-quotes.js",{
+  width:"100%",height:380,colorTheme:"dark",isTransparent:true,locale:"en",showSymbolLogo:false,
+  symbolsGroups:[
+    {name:"Indices",symbols:[{name:"BSE:SENSEX",displayName:"SENSEX"},{name:"NSE:NIFTY",displayName:"NIFTY 50"},{name:"NSE:BANKNIFTY",displayName:"BANK NIFTY"}]},
+    {name:"Stocks",symbols:[{name:"NSE:RELIANCE",displayName:"Reliance"},{name:"NSE:HDFCBANK",displayName:"HDFC Bank"},{name:"NSE:TCS",displayName:"TCS"},{name:"NSE:INFY",displayName:"Infosys"}]},
+    {name:"Others",symbols:[{name:"FX_IDC:USDINR",displayName:"USD/INR"},{name:"OANDA:XAUUSD",displayName:"Gold"}]}
+  ]
+});
 </script>
-<!-- AUTO REDIRECT COUNTDOWN END -->
-  </div>  
 </body>
 </html>
+
